@@ -11,6 +11,7 @@ import java.util.stream.Stream;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
+        System.out.println(puzzle1());
         System.out.println(puzzle2());
     }
     public static int puzzle1() throws IOException {

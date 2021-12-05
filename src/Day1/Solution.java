@@ -7,6 +7,7 @@ import java.util.stream.Collectors;
 
 public class Solution {
     public static void main(String[] args) throws IOException {
+        System.out.println(puzzle1());
         System.out.println(puzzle2());
     }
     public static int puzzle1() throws IOException {
@@ -18,7 +19,7 @@ public class Solution {
         return count;
     }
     public static int puzzle2() throws IOException {
-        var lines = Files.readAllLines(Paths.get("./src/Day1/Input.txt")).stream().map(Integer::parseInt).collect(Collectors.toList());
+        var lines = Files.readAllLines(Paths.get("./src/Day1/Input.txt")).stream().map(Integer::parseInt).toList();
         var count = 0;
         for(int i = 0, j = 1, k = 2, l = 3; l < lines.size(); i++, j++, k++, l++){
             var middle = lines.get(j) + lines.get(k);
